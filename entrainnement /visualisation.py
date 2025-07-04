@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Chargement des données nettoyées
-df = pd.read_csv("/Users/younes/Desktop/5 anomalies/projet/fcd_data_normalized_cleaned.csv")
+df = pd.read_csv("fcd_data_normalized_cleaned.csv")
 
 # S'assurer que 'anomaly' est bien de type catégorie
 df['anomaly'] = df['anomaly'].astype(int)

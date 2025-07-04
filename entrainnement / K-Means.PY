@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 # ------------------------------------------------------------
 # Étape 1 : Chargement du dataset annoté
 # ------------------------------------------------------------
-df = pd.read_csv("/Users/younes/Desktop/5 anomalies/projet/fcd_data_cleaned.csv")
+df = pd.read_csv("fcd_data_cleaned.csv")
 
 # ------------------------------------------------------------
 # Étape 2 : Sélection des variables pertinentes

@@ -9,7 +9,7 @@ import seaborn as sns
 # ------------------------------------------------------------
 # Étape 1 : Chargement du dataset
 # ------------------------------------------------------------
-df = pd.read_csv("/Users/younes/Desktop/5 anomalies/projet/fcd_data_cleaned.csv")
+df = pd.read_csv("fcd_data_cleaned.csv")
 
 # ------------------------------------------------------------
 # Étape 2 : Sélection des variables explicatives et de la cible

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Chargement des données normalisées
-df = pd.read_csv("/Users/younes/Desktop/5 anomalies/projet/fcd_data_normalized.csv")
+df = pd.read_csv("fcd_data_normalized.csv")
 
 # 1. Suppression des doublons
 df.drop_duplicates(inplace=True)
