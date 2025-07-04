@@ -9,7 +9,7 @@ import os
 
 
 # Charger les données
-df = pd.read_csv("fcd_data_normalized_cleaned.csv")
+df = pd.read_csv("entrainnement/fcd_data_normalized_cleaned.csv")
 
 # Initialisation de l'application Dash avec thème dark Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
@@ -37,9 +37,6 @@ app.layout = dbc.Container([
     className="mb-4 shadow-sm p-3"
 )
 ,
-
-
-
     dbc.Row([
         dbc.Col(dbc.Card([
             dbc.CardBody([
