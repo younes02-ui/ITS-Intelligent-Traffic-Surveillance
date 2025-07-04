@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ITS-Intelligent-Traffic-Surveillance
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python dashboard_ITS.py
+    plan: free
