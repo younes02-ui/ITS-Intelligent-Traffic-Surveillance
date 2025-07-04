@@ -1,0 +1,50 @@
+Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups.
+***Starting server on port 49890 ***
+Loading net-file from 'E3.net.xml' ... done (77ms).
+Loading route-files incrementally from 'random_routes.rou.xml'
+Loading done.
+Simulation started with time: 0.00.
+Warning: Teleporting vehicle 'v_burst'; collision with vehicle '77', lane='ET01_1', gap=-14.19, time=122.00, stage=move.
+Warning: Vehicle 'v_burst' ends teleporting on edge '456581921#0', time=122.00.
+Warning: Teleporting vehicle 'v_stop'; waited too long (jam), lane=':millieu_12_0', time=409.00.
+Warning: Vehicle 'v_stop' ends teleporting on edge '308156705#1', time=409.00.
+Warning: Route file should be sorted by departure time, ignoring '78'!
+Warning: Route file should be sorted by departure time, ignoring '79'!
+Warning: Route file should be sorted by departure time, ignoring '80'!
+Warning: Route file should be sorted by departure time, ignoring '81'!
+Warning: Route file should be sorted by departure time, ignoring '82'!
+Warning: Route file should be sorted by departure time, ignoring '83'!
+Warning: Route file should be sorted by departure time, ignoring '84'!
+Warning: Route file should be sorted by departure time, ignoring '85'!
+Warning: Route file should be sorted by departure time, ignoring '86'!
+Warning: Route file should be sorted by departure time, ignoring '88'!
+Warning: Route file should be sorted by departure time, ignoring '90'!
+Warning: Route file should be sorted by departure time, ignoring '91'!
+Warning: Route file should be sorted by departure time, ignoring '92'!
+Warning: Route file should be sorted by departure time, ignoring '93'!
+Warning: Route file should be sorted by departure time, ignoring '94'!
+Warning: Route file should be sorted by departure time, ignoring '95'!
+Warning: Route file should be sorted by departure time, ignoring '96'!
+Warning: Route file should be sorted by departure time, ignoring '97'!
+Warning: Route file should be sorted by departure time, ignoring '98'!
+Warning: Teleporting vehicle 'v_stop'; waited too long (jam), lane='308156705#1_0', time=713.00.
+Warning: Vehicle 'v_stop' ends teleporting on edge '689171244#0', time=713.00.
+Simulation ended at time: 1000.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 58.26s
+ TraCI-Duration: 6.17s
+ Real time factor: 17.1644
+ UPS: 109.629248
+Vehicles:
+ Inserted: 54
+ Running: 1
+ Waiting: 0
+ Teleports: 3 (Collisions: 1, Jam: 2)
+Statistics (avg of 53):
+ RouteLength: 386.75
+ Speed: 7.93
+ Duration: 102.94
+ WaitingTime: 46.34
+ TimeLoss: 74.01
+ DepartDelay: 25.28
