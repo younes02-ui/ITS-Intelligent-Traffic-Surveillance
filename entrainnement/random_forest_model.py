@@ -23,8 +23,9 @@ def run_random_forest():
 
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
-
+    
     y_pred = model.predict(X_test)
+    
     report_text = classification_report(y_test, y_pred, digits=4)
 
     console.print(Panel.fit(

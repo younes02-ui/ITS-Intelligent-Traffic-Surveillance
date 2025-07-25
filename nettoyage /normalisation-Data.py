@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 # === Étape 1 : Chargement du fichier nettoyé ===
-fichier_entree = "fcd_data_augmented.csv"
+fichier_entree = "fcd_data_with_anomalies.csv"
 df = pd.read_csv(fichier_entree)
 
 # === Étape 2 : Définition des colonnes à normaliser ===

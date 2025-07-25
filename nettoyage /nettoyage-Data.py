@@ -25,7 +25,7 @@ for col in cols_to_float:
 df.reset_index(drop=True, inplace=True)
 
 # 6. Sauvegarde
-df.to_csv("fcd_data_normalized_cleaned.csv", index=False)
+df.to_csv("entrainnement/fcd_data_normalized_cleaned.csv", index=False)
 
 print("✅ Données normalisées nettoyées avec succès.")
 print(f"🔢 Nombre de lignes finales : {len(df)}")
