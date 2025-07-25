@@ -40,3 +40,21 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+models = ["Random Forest", "Gradient Boosting"]
+f1_scores = [0.9924, 0.9924]
+recalls = [1.0, 1.0]
+precisions = [0.9924, 1.0]
+
+plt.figure(figsize=(8, 5))
+plt.bar(x, precisions, width=0.2, label="Precision", align='center')
+plt.bar([i + 0.2 for i in x], recalls, width=0.2, label="Recall", align='center')
+plt.bar([i + 0.4 for i in x], f1_scores, width=0.2, label="F1-Score", align='center')
+plt.xticks([i + 0.2 for i in x], models)
+plt.title("Comparaison des modèles supervisés")
+plt.ylabel("Score")
+plt.ylim(0.8, 1.05)
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
