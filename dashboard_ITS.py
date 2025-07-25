@@ -9,7 +9,7 @@ import os
 
 
 # Charger les données
-df = pd.read_csv("entrainnement/fcd_data_normalized_cleaned.csv")
+df = pd.read_csv("entrainnement/fcd_data_normalized.csv")
 
 # Initialisation de l'application Dash avec thème dark Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
