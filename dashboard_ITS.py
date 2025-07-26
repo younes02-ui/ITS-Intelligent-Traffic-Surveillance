@@ -10,9 +10,9 @@ import os
 
 # Charger les données
 df = pd.read_csv("entrainnement/fcd_data_normalized_cleaned.csv")
-
 # Initialisation de l'application Dash avec thème dark Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+server = app.server
 app.title = "Dashboard ITS – Anomalies de Trafic"
 
 # Layout avec Navbar + KPI
