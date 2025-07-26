@@ -14,10 +14,9 @@ df = pd.read_csv("entrainnement/fcd_data_normalized_cleaned.csv")
 # Initialisation de l'application Dash avec thème dark Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 app.title = "Dashboard ITS – Anomalies de Trafic"
-server = app.server  
+server = app.server
 
-# Layout avec Navbar + KPIgit status
-
+# Layout avec Navbar + KPI
 app.layout = dbc.Container([
  dbc.Navbar(
     dbc.Container([
@@ -135,5 +134,7 @@ def update_graphs(selected_vehicle, selected_variable):
 
 # Lancement auto
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    if not os.environ.get("RENDER"):  # uniquement local
+        import webbrowser
+        webbrowser.open_new("http://127.0.0.1:10000/")
+        app.run(debug=True, host="0.0.0.0", port=10000)
