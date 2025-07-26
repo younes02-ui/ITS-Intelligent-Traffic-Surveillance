@@ -3,5 +3,5 @@ services:
     name: ITS-Intelligent-Traffic-Surveillance
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python dashboard_ITS.py
+    startCommand: gunicorn dashboard_ITS:server
     plan: free
